@@ -1,5 +1,0 @@
-<!doctype html><meta charset="utf-8"><body>ponte
-<script>
-const p=new URLSearchParams(location.search);const v=p.get('v');
-fetch('https://raw.githubusercontent.com/gelsonli/instagram-midia/main/tiktok/'+v).then(r=>r.blob()).then(b=>{parent.postMessage({gelsonVid:true,name:v,blob:b},'*');document.body.textContent='enviado '+b.size}).catch(e=>{parent.postMessage({gelsonVid:true,err:String(e)},'*')});
-</script>
